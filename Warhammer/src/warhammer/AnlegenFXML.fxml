@@ -7,8 +7,49 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warhammer.AnlegenFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warhammer.AnlegenFXMLController">
     <stylesheets>
-        <URL value="@anlegenfxml.css"/>
+        <URL value="@anlegenfxml.css" />
     </stylesheets>
+   <children>
+      <SplitMenuButton layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="19.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Standart">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#listenAction" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="18.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Elite">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="19.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Sturm">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="17.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Unterstützung">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
+         <children>
+            <Button layoutX="31.0" layoutY="38.0" mnemonicParsing="false" text="zurück" />
+            <Button layoutX="442.0" layoutY="38.0" mnemonicParsing="false" text="speichern" />
+         </children>
+      </Pane>
+      <Label layoutX="20.0" layoutY="20.0" text="Punktelimit: " />
+      <Label layoutX="93.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="punkte" />
+      <TextField layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
+   </children>
 </AnchorPane>

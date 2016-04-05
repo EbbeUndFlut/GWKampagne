@@ -7,6 +7,7 @@ package warhammer;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -19,6 +20,12 @@ public class AnlegenFXMLController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    @FXML
+    public void listenAction(){
+        System.out.print("Läuft");    
+    }
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
