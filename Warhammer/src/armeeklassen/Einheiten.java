@@ -27,4 +27,8 @@ public class Einheiten {
         punktKosten = p;
     }
     
+    public int getPunkte(){
+        return punktKosten;
+    }
+    
 }
