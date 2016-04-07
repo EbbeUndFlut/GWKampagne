@@ -44,32 +44,32 @@
       </SplitMenuButton>
       <SplitMenuButton layoutX="19.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Sturm">
         <items>
-          <MenuItem mnemonicParsing="false" text="Assault Squad         70Pkt." />
-          <MenuItem mnemonicParsing="false" text="Scout Bike Squad      54Pkt." />
-          <MenuItem mnemonicParsing="false" text="Bike Squad            63Pkt." />
-          <MenuItem mnemonicParsing="false" text="Attack Bike Squad     40Pkt." />
+          <MenuItem mnemonicParsing="false" text="Assault Squad              70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Scout Bike Squad         54Pkt." />
+          <MenuItem mnemonicParsing="false" text="Bike Squad                   63Pkt." />
+          <MenuItem mnemonicParsing="false" text="Attack Bike Squad        40Pkt." />
           <MenuItem mnemonicParsing="false" text="Land Speeder Storm    40Pkt." />
-          <MenuItem mnemonicParsing="false" text="Land Speeders         45Pkt." />
-          <MenuItem mnemonicParsing="false" text="Rhino                 35Pkt" />
-          <MenuItem mnemonicParsing="false" text="Razorback             55Pkt." />
-          <MenuItem mnemonicParsing="false" text="Drop Pod              35Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Speeders             45Pkt." />
+          <MenuItem mnemonicParsing="false" text="Rhino                           35Pkt" />
+          <MenuItem mnemonicParsing="false" text="Razorback                    55Pkt." />
+          <MenuItem mnemonicParsing="false" text="Drop Pod                     35Pkt." />
           <MenuItem mnemonicParsing="false" text="Stormtalon Gunship   110Pkt." />
         </items>
       </SplitMenuButton>
       <SplitMenuButton layoutX="17.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Unterstützung">
         <items>
-          <MenuItem mnemonicParsing="false" text="Devastor Squad                 70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Devastor Squad                        70Pkt." />
           <MenuItem mnemonicParsing="false" text="Centurion Devastor Squad      165Pkt." />
-          <MenuItem mnemonicParsing="false" text="Thunderfire Cannons           100Pkt." />
-          <MenuItem mnemonicParsing="false" text="Predators                      75Pkt." />
-          <MenuItem mnemonicParsing="false" text="Whirlwinds                     65Pkt." />
-          <MenuItem mnemonicParsing="false" text="Vindicators                   120Pkt." />
-          <MenuItem mnemonicParsing="false" text="Hunters                        70Pkt." />
-          <MenuItem mnemonicParsing="false" text="Stalkers                       75Pkt." />
-          <MenuItem mnemonicParsing="false" text="Stormraven Gunship            200Pkt." />
-          <MenuItem mnemonicParsing="false" text="Land Raider                   250Pkt." />
-          <MenuItem mnemonicParsing="false" text="Land Raider Crusader          250Pkt." />
-          <MenuItem mnemonicParsing="false" text="Land Raider Redeemer          240Pkt." />
+          <MenuItem mnemonicParsing="false" text="Thunderfire Cannons               100Pkt." />
+          <MenuItem mnemonicParsing="false" text="Predators                                  75Pkt." />
+          <MenuItem mnemonicParsing="false" text="Whirlwinds                                65Pkt." />
+          <MenuItem mnemonicParsing="false" text="Vindicators                              120Pkt." />
+          <MenuItem mnemonicParsing="false" text="Hunters                                     70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Stalkers                                     75Pkt." />
+          <MenuItem mnemonicParsing="false" text="Stormraven Gunship               200Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider                             250Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider Crusader             250Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider Redeemer           240Pkt." />
         </items>
       </SplitMenuButton>
       <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
