@@ -21,7 +21,7 @@ Button{
     -fx-background-color:transparent;
     -fx-text-fill:white;
     -fx-font-family: "Agency FB";
-    -fx-font-size: 13px;  
+    -fx-font-size: 18px;  
 }
 
 Button:hover{

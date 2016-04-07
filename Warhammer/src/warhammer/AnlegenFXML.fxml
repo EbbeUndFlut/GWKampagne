@@ -82,7 +82,7 @@
       <Label fx:id="labl1" layoutX="105.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="punkte" />
       <TextField fx:id="einheitsname" layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
       <Label fx:id="anzahl" layoutX="188.0" layoutY="20.0" text="" />
-      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="undo" fx:id="undo" onAction="#undoAction" >
+      <Button layoutX="188.0" layoutY="110.0" prefHeight="30.0" prefWidth="90.0"   mnemonicParsing="false" text="undo" fx:id="undo" onAction="#undoAction" >
           <tooltip>
               <Tooltip text="Letzte Einheit entfernen" />
           </tooltip>
