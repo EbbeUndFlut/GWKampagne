@@ -2,6 +2,21 @@
  * Empty Stylesheet file.
  */
 
-.mainFxmlClass {
+#AnchorPane {
+    -fx-background-color: #ade4fc;
+    
 
+}
+SplitMenuButton, Button{
+    -fx-color:#ade4fc;
+}
+SplitMenuButton:focus{
+    -fx-border-style:none;
+}
+
+.punkte{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,1,2 );
 }
