@@ -74,7 +74,7 @@
       </SplitMenuButton>
       <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
          <children>
-            <Button layoutX="31.0" layoutY="38.0" mnemonicParsing="false" text="zurück" />
+            <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="38.0" mnemonicParsing="false" text="zurück" />
             <Button layoutX="442.0" layoutY="38.0" mnemonicParsing="false" text="speichern" />
          </children>
       </Pane>
