@@ -19,7 +19,7 @@ public class Warhammer extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("AnlegenFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainFXML.fxml"));
         
         Scene scene = new Scene(root);
         
