@@ -35,5 +35,4 @@ Button:hover{
 Button:pressed:hover{
     
     -fx-background-color: rgba(100,0,0,0.5)
-  
 }
