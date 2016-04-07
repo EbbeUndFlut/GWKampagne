@@ -14,32 +14,32 @@
    <children>
       <SplitMenuButton layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
         <items>
-          <MenuItem mnemonicParsing="false" onAction="#addCaptain" text="Captain       90Pkt." />
-          <MenuItem mnemonicParsing="false" onAction="#addLibrarian" text="Librarian     65Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addCaptain" text="Captain           90Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addLibrarian" text="Librarian         65Pkt." />
           <MenuItem mnemonicParsing="false" onAction="#addTechmarine" text="Techmarine    65Pkt." />
-          <MenuItem mnemonicParsing="false" onAction="#addChaplain" text="Chaplain      90Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addChaplain" text="Chaplain         90Pkt." />
         </items>
       </SplitMenuButton>
       <SplitMenuButton layoutX="19.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Standart">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#addTactical" text="Tactical Squad       70Pkt." />
           <MenuItem mnemonicParsing="false" onAction="#addScoutSquad" text="Scout Squad          55Pkt." />
-          <MenuItem mnemonicParsing="false" onAction="#addCrusader" text="Crusader Squad    70Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addCrusader" text="Crusader Squad     70Pkt." />
         </items>
       </SplitMenuButton>
       <SplitMenuButton layoutX="18.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Elite">
         <items>
-          <MenuItem mnemonicParsing="false" text="Command Squad              90Pkt." />
-          <MenuItem mnemonicParsing="false" text="Honour Guard               85Pkt." />
-          <MenuItem mnemonicParsing="false" text="Centurion Assault Squad   165Pkt." />
-          <MenuItem mnemonicParsing="false" text="Vanguard Veteran Squad     95Pkt." />
+          <MenuItem mnemonicParsing="false" text="Command Squad                  90Pkt." />
+          <MenuItem mnemonicParsing="false" text="Honour Guard                       85Pkt." />
+          <MenuItem mnemonicParsing="false" text="Centurion Assault Squad     165Pkt." />
+          <MenuItem mnemonicParsing="false" text="Vanguard Veteran Squad      95Pkt." />
           <MenuItem mnemonicParsing="false" text="Sternguard Veteran Squad  110Pkt." />
-          <MenuItem mnemonicParsing="false" text="Dreadnoughts              100Pkt." />
+          <MenuItem mnemonicParsing="false" text="Dreadnoughts                     100Pkt." />
           <MenuItem mnemonicParsing="false" text="Venerable Dreadnoughts    125Pkt." />
-          <MenuItem mnemonicParsing="false" text="Ironclad Dreadnoughts     135Pkt." />
-          <MenuItem mnemonicParsing="false" text="Legion of the Damned      125Pkt." />
-          <MenuItem mnemonicParsing="false" text="Terminator Squad          175Pkt." />
-          <MenuItem mnemonicParsing="false" text="Terminator Assault Squad  175Pkt." />
+          <MenuItem mnemonicParsing="false" text="Ironclad Dreadnoughts       135Pkt." />
+          <MenuItem mnemonicParsing="false" text="Legion of the Damned        125Pkt." />
+          <MenuItem mnemonicParsing="false" text="Terminator Squad               175Pkt." />
+          <MenuItem mnemonicParsing="false" text="Terminator Assault Squad   175Pkt." />
         </items>
       </SplitMenuButton>
       <SplitMenuButton layoutX="19.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Sturm">
