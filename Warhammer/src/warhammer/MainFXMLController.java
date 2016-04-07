@@ -49,6 +49,10 @@ public class MainFXMLController implements Initializable {
         
         
     }
+    @FXML
+    private void closeAction(ActionEvent event){
+        System.exit(0);
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

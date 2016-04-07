@@ -37,7 +37,7 @@
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Optionen" GridPane.columnIndex="1" GridPane.rowIndex="6">
       </Button>
       
-      <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Schließen" GridPane.columnIndex="1" GridPane.rowIndex="8">
+      <Button onAction="#closeAction" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Schließen" GridPane.columnIndex="1" GridPane.rowIndex="8">
       </Button>
       
    </children>
