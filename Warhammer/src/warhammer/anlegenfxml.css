@@ -9,6 +9,18 @@
 }
 SplitMenuButton, Button{
     -fx-color:#ade4fc;
+    -fx-background-color:transparent;
+}
+Button{
+    -fx-border-style:solid;
+    -fx-border-color:#9ED0E5;
+    -fx-border-width:2px;
+}
+Button:hover{
+    -fx-border-color:black;
+}
+Button:pressed{
+    -fx-border-color:red;
 }
 SplitMenuButton:focus{
     -fx-border-style:none;
