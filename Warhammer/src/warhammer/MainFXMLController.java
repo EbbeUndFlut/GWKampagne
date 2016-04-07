@@ -18,6 +18,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+
 /**
  *
  * @author s13
@@ -29,6 +30,9 @@ public class MainFXMLController implements Initializable {
     
     @FXML
     private Button armee;
+    
+    @FXML
+    private Button optionen;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -46,8 +50,19 @@ public class MainFXMLController implements Initializable {
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();
-        
-        
+     
+    }
+    
+      @FXML
+    private void actionOpt(ActionEvent event) throws IOException{
+        Stage stage;
+        Parent root;
+        stage=(Stage)optionen.getScene().getWindow();
+        root=FXMLLoader.load(getClass().getResource("/Optionen/OptionenFXML.fxml"));
+        Scene scene =new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+     
     }
     
     @Override
