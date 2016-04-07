@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.*?>
 
-<GridPane id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"fx:controller="warhammer.MainFXMLController" >
+<GridPane id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="warhammer.MainFXMLController" >
     <stylesheets>
         <URL value="@MainFXML.css"/>
     </stylesheets>
@@ -31,7 +31,7 @@
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Kampagne starten" GridPane.columnIndex="1" GridPane.rowIndex="2">
       </Button>
       
-      <Button onAction="#actionBuilder" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Army Builder" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Button fx:id="armee" onAction="#actionBuilder" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Army Builder" GridPane.columnIndex="1" GridPane.rowIndex="4">
       </Button>
       
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Optionen" GridPane.columnIndex="1" GridPane.rowIndex="6">
