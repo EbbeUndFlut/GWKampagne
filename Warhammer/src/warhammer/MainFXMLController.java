@@ -27,6 +27,11 @@ public class MainFXMLController implements Initializable {
         label.setText("Hello World!");
     }
     
+    @FXML
+    private void actionBuilder(ActionEvent event){
+        
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
