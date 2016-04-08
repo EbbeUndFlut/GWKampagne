@@ -32,7 +32,7 @@
     </rowConstraints>
     
    <children>
-      <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Kampagne starten" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Button fx:id="start" onAction="#actionStart"  maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Kampagne starten" GridPane.columnIndex="1" GridPane.rowIndex="2">
       </Button>
       
       <Button fx:id="armee" onAction="#actionBuilder" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Army Builder" GridPane.columnIndex="1" GridPane.rowIndex="4">
