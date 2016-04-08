@@ -1,6 +1,17 @@
+
+
+.root{
+    -fx-background-image: url(../Media/img.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center; 
+    
+}
+
 /*
  * Empty Stylesheet file.
  */
+
 
 #AnchorPane {
     -fx-background-color: #ade4fc;

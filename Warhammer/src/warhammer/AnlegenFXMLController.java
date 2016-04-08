@@ -10,10 +10,15 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import armeeklassen.*;
+import java.io.IOException;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -32,6 +37,8 @@ public class AnlegenFXMLController implements Initializable {
    
    @FXML
    Button undo;
+   @FXML
+   Button back;
    
    @FXML
    TextField einheitsname;
@@ -45,6 +52,18 @@ public class AnlegenFXMLController implements Initializable {
            labl1.setText(""+army.punkteRechner());
            anzahl.setText(""+army.Einheiten.size());
        }
+   }
+   
+   @FXML
+   public void backAction(ActionEvent event) throws IOException{
+        Stage stage;
+        Parent root;
+        stage=(Stage)back.getScene().getWindow();
+        root=FXMLLoader.load(getClass().getResource("MainFXML.fxml"));
+        
+        Scene scene =new Scene(root);
+        stage.setScene(scene);
+        stage.show();
    }
    
    @FXML
