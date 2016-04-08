@@ -18,28 +18,47 @@
     
 
 }
-SplitMenuButton, Button{
-    -fx-color:#ade4fc;
-    -fx-background-color:transparent;
+SplitMenuButton{
+    
+   
 }
 Button{
-    -fx-border-style:solid;
-    -fx-border-color:#9ED0E5;
-    -fx-border-width:2px;
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 16px;  
 }
+
 Button:hover{
-    -fx-border-color:black;
+     
+    -fx-background-color: rgba(174,174,0,0.1);
+    -fx-text-fill: yellow;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(174,174,0);
 }
+
 Button:pressed{
-    -fx-border-color:red;
+    
+    -fx-background-color: rgba(100,0,0,0.5)
+  
 }
-SplitMenuButton:focus{
-    -fx-border-style:none;
-}
+
+
 
 .punkte{
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-text-fill: #333333;
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,1,2 );
+}
+
+SplitMenuButton{
+    -fx-background-color:transparent;
+    -fx-color: rgba(100,0,0,0.3);
+    
+    
+}
+
+MenuItem{
+   -fx-text-fill:  rgba(100,0,0,0.5); 
 }
