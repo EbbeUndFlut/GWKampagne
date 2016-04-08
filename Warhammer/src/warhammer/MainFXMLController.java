@@ -45,7 +45,7 @@ public class MainFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)armee.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("AnlegenFXML.fxml"));
+        root=FXMLLoader.load(getClass().getResource("/Anlegen/VolksAuswahlFXML.fxml"));
         
         Scene scene =new Scene(root);
         stage.setScene(scene);
