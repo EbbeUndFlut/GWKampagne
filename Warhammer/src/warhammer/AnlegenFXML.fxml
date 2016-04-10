@@ -8,9 +8,14 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warhammer.AnlegenFXMLController">
+<<<<<<< HEAD
+=======
+   
+>>>>>>> origin/master
     <stylesheets>
         <URL value="@anlegenfxml.css" />
     </stylesheets>
+    
    <children>
       <SplitMenuButton styleClass="knopf" layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
         <items>
@@ -19,6 +24,7 @@
           <MenuItem mnemonicParsing="false" onAction="#addTechmarine" text="Techmarine    65Pkt." />
           <MenuItem mnemonicParsing="false" onAction="#addChaplain" text="Chaplain         90Pkt." />
         </items>
+        
       </SplitMenuButton>
       <SplitMenuButton layoutX="19.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Standart">
         <items>
@@ -27,6 +33,7 @@
           <MenuItem mnemonicParsing="false" onAction="#addCrusader" text="Crusader Squad     70Pkt." />
         </items>
       </SplitMenuButton>
+      
       <SplitMenuButton layoutX="18.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Elite">
         <items>
           <MenuItem mnemonicParsing="false" text="Command Squad                  90Pkt." />
@@ -42,6 +49,7 @@
           <MenuItem mnemonicParsing="false" text="Terminator Assault Squad   175Pkt." />
         </items>
       </SplitMenuButton>
+      
       <SplitMenuButton layoutX="19.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Sturm">
         <items>
           <MenuItem mnemonicParsing="false" text="Assault Squad              70Pkt." />
@@ -56,6 +64,7 @@
           <MenuItem mnemonicParsing="false" text="Stormtalon Gunship   110Pkt." />
         </items>
       </SplitMenuButton>
+      
       <SplitMenuButton layoutX="17.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Unterstützung">
         <items>
           <MenuItem mnemonicParsing="false" text="Devastor Squad                        70Pkt." />
@@ -72,20 +81,27 @@
           <MenuItem mnemonicParsing="false" text="Land Raider Redeemer           240Pkt." />
         </items>
       </SplitMenuButton>
+      
       <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
          <children>
             <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" text="zurück" />
             <Button layoutX="442.0" layoutY="150.0" mnemonicParsing="false" text="speichern" />
          </children>
       </Pane>
+      
       <Label styleClass="punkte" layoutX="20.0" layoutY="20.0" text="Punktelimit: " />
       <Label fx:id="labl1" layoutX="105.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="punkte" />
       <TextField fx:id="einheitsname" layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
       <Label fx:id="anzahl" layoutX="188.0" layoutY="20.0" text="" />
+<<<<<<< HEAD
       <Button layoutX="188.0" layoutY="110.0" prefHeight="30.0" prefWidth="90.0"   mnemonicParsing="false" text="undo" fx:id="undo" onAction="#undoAction" >
+=======
+      
+      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="undo" fx:id="undo" onAction="#undoAction" >        
+>>>>>>> origin/master
           <tooltip>
               <Tooltip text="Letzte Einheit entfernen" />
-          </tooltip>
+          </tooltip>    
       </Button>
    </children>
 </AnchorPane>

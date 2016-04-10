@@ -7,26 +7,30 @@
 <?import java.net.*?>
 
 <GridPane id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="warhammer.MainFXMLController" >
+   
     <stylesheets>
         <URL value="@MainFXML.css"/>
     </stylesheets>
-  <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="NEVER" maxWidth="125.0" minWidth="125.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="49.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="28.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="79.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
-      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
-      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
-  </rowConstraints>
+    
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="125.0" minWidth="125.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="49.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="28.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="79.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="5.0" minHeight="5.0" prefHeight="5.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    
    <children>
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Kampagne starten" GridPane.columnIndex="1" GridPane.rowIndex="2">
       </Button>
@@ -34,7 +38,7 @@
       <Button fx:id="armee" onAction="#actionBuilder" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Army Builder" GridPane.columnIndex="1" GridPane.rowIndex="4">
       </Button>
       
-      <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Optionen" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <Button  fx:id="optionen" onAction="#actionOpt" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Optionen" GridPane.columnIndex="1" GridPane.rowIndex="6">
       </Button>
       
       <Button onAction="#closeAction" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Schließen" GridPane.columnIndex="1" GridPane.rowIndex="8">
