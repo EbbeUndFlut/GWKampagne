@@ -41,7 +41,7 @@ public class MainFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)start.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("/KampStart/KampStart.fxml"));
+        root=FXMLLoader.load(getClass().getResource("/KampStart/Start.fxml"));
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();

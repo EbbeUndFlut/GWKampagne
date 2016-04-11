@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author s01
  */
-public class KampStartController implements Initializable {
+public class StartController implements Initializable {
 
     /**
      * Initializes the controller class.

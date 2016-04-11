@@ -27,7 +27,7 @@
         <RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
         <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
-        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="NEVER" />
     </rowConstraints>
   
    <children>
