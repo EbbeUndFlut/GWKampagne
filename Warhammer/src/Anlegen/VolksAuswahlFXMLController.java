@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package warhammer;
+package Anlegen;
 
 import java.io.IOException;
 import java.net.URL;
@@ -15,60 +15,45 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-
 /**
+ * FXML Controller class
  *
  * @author s13
  */
-public class MainFXMLController implements Initializable {
+public class VolksAuswahlFXMLController implements Initializable {
+
+    @FXML
+    Button back;
+    @FXML
+    Button next;
     
     @FXML
-    private Label label;
-    
-    @FXML
-    private Button armee;
-    
-    @FXML
-    private Button optionen;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
-    @FXML
-    private void actionBuilder(ActionEvent event) throws IOException{
+    public void backAction(ActionEvent event) throws IOException{
         Stage stage;
         Parent root;
-        stage=(Stage)armee.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("/Anlegen/VolksAuswahlFXML.fxml"));
+        stage=(Stage)back.getScene().getWindow();
+        root=FXMLLoader.load(getClass().getResource("/warhammer/MainFXML.fxml"));
         
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();
-     
     }
     
-      @FXML
-    private void actionOpt(ActionEvent event) throws IOException{
+     @FXML
+    public void nextAction(ActionEvent event) throws IOException{
         Stage stage;
         Parent root;
-        stage=(Stage)optionen.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("/Optionen/OptionenFXML.fxml"));
+        stage=(Stage)next.getScene().getWindow();
+        root=FXMLLoader.load(getClass().getResource("AnlegenFXML.fxml"));
+        
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();
-     
-    }
-    @FXML
-    private void closeAction(ActionEvent event){
-        System.exit(0);
     }
     
+        
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

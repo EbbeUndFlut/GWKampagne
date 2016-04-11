@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import java.net.URL;
-import static javafx.scene.media.MediaPlayer.INDEFINITE;
 
 /**
  *
@@ -29,9 +28,9 @@ public class Warhammer extends Application {
         final Media media = new Media(resource.toString());
         final MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setVolume(0.5);
-
-
         mediaPlayer.play();
+
+        
        
         Parent root = FXMLLoader.load(getClass().getResource("MainFXML.fxml"));
         
