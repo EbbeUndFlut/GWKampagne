@@ -14,10 +14,10 @@
    <children>
       <Label layoutX="356.0" layoutY="57.0" text="Wähle Dein Volk" />
       <TextField layoutX="326.0" layoutY="96.0" promptText="Name Deines Volkes" />
-      <Button layoutX="99.0" layoutY="238.0" mnemonicParsing="false" text="Button" />
+      <Button onAction="#nextAction" fx:id="next" layoutX="99.0" layoutY="238.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="289.0" layoutY="238.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="495.0" layoutY="238.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="639.0" layoutY="238.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="47.0" layoutY="441.0" mnemonicParsing="false" text="zurück" />
+      <Button onAction="#backAction" fx:id="back" layoutX="47.0" layoutY="441.0" mnemonicParsing="false" text="zurück" />
    </children>
 </AnchorPane>

@@ -59,7 +59,7 @@ public class AnlegenFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)back.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("warhammer/MainFXML.fxml"));
+        root=FXMLLoader.load(getClass().getResource("VolksAuswahlFXML.fxml"));
         
         Scene scene =new Scene(root);
         stage.setScene(scene);
