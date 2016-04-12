@@ -1,4 +1,6 @@
-
+/*
+ * Empty Stylesheet file.
+ */
 
 .root{
     -fx-background-image: url(../Media/img.jpg);
@@ -7,24 +9,11 @@
     -fx-background-position: center center; 
     
 }
-
-/*
- * Empty Stylesheet file.
- */
-
-
-#AnchorPane {
-    -fx-background-color: #ade4fc;
-    
-
-}
-
 Button{
     -fx-background-color:transparent;
     -fx-text-fill:white;
-    -fx-font-family:"Agency FB";
-    -fx-font-weight:bold;
-    -fx-font-size: 13px;  
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 16px;  
 }
 
 Button:hover{
@@ -40,16 +29,3 @@ Button:pressed{
     -fx-background-color: rgba(100,0,0,0.5)
   
 }
-
-
-
-.punkte{
-    -fx-font-size: 12px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #333333;
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,1,2 );
-}
-
-
-
-

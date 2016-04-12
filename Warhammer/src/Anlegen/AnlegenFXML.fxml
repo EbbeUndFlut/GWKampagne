@@ -7,14 +7,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anlegen.AnlegenFXMLController">
+=======
+<AnchorPane  id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anlegen.AnlegenFXMLController">
+>>>>>>> origin/master
    
     <stylesheets>
         <URL value="@anlegenfxml.css" />
     </stylesheets>
     
    <children>
-      <SplitMenuButton styleClass="knopf" layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
+      <SplitMenuButton  layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#addCaptain" text="Captain           90Pkt." />
           <MenuItem mnemonicParsing="false" onAction="#addLibrarian" text="Librarian         65Pkt." />
