@@ -7,7 +7,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anlegen.AnlegenFXMLController">
+=======
 <AnchorPane  id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anlegen.AnlegenFXMLController">
+>>>>>>> origin/master
    
     <stylesheets>
         <URL value="@anlegenfxml.css" />
@@ -81,8 +85,8 @@
       
       <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
          <children>
-            <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" text="zurück" />
-            <Button layoutX="442.0" layoutY="150.0" mnemonicParsing="false" text="speichern" />
+            <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" text="Zurück" />
+            <Button layoutX="442.0" layoutY="150.0" mnemonicParsing="false" text="Speichern" />
          </children>
       </Pane>
       
@@ -91,7 +95,7 @@
       <TextField fx:id="einheitsname" layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
       <Label fx:id="anzahl" layoutX="188.0" layoutY="20.0" text="" />
       
-      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="undo" fx:id="undo" onAction="#undoAction" >        
+      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="Undo" fx:id="undo" onAction="#undoAction" >        
           <tooltip>
               <Tooltip text="Letzte Einheit entfernen" />
           </tooltip>    

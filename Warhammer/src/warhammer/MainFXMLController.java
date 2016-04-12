@@ -25,8 +25,7 @@ import javafx.stage.Stage;
  */
 public class MainFXMLController implements Initializable {
     
-    @FXML
-    private Label label;
+
     
     @FXML
     private Button armee;
@@ -35,9 +34,18 @@ public class MainFXMLController implements Initializable {
     private Button optionen;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button start;
+    
+    @FXML
+    private void actionStart(ActionEvent event) throws IOException{
+        Stage stage;
+        Parent root;
+        stage=(Stage)start.getScene().getWindow();
+        root=FXMLLoader.load(getClass().getResource("/KampStart/Start.fxml"));
+        Scene scene =new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+                
     }
     
     @FXML
