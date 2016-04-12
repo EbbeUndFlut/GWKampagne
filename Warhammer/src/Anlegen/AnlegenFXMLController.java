@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package warhammer;
+package Anlegen;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -59,7 +59,9 @@ public class AnlegenFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)back.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("MainFXML.fxml"));
+
+        root=FXMLLoader.load(getClass().getResource("/Auswahl/VolksAuswahlFXML.fxml"));
+
         
         Scene scene =new Scene(root);
         stage.setScene(scene);
@@ -198,7 +200,6 @@ public class AnlegenFXMLController implements Initializable {
           einheitsname.setPromptText("HIER NAMEN EINGEBEN");
        }
    }
-    @FXML
     public void listenAction(){
         System.out.print("Läuft");  
         //labl1.setText(""+army.getPunkte());

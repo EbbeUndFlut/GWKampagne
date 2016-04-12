@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Anlegen.AnlegenFXMLController">
+
+   
+    <stylesheets>
+        <URL value="@anlegenfxml.css" />
+    </stylesheets>
+    
+   <children>
+      <SplitMenuButton  layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addCaptain" text="Captain           90Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addLibrarian" text="Librarian         65Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addTechmarine" text="Techmarine    65Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addChaplain" text="Chaplain         90Pkt." />
+        </items>
+        
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="19.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Standart">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addTactical" text="Tactical Squad       70Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addScoutSquad" text="Scout Squad          55Pkt." />
+          <MenuItem mnemonicParsing="false" onAction="#addCrusader" text="Crusader Squad     70Pkt." />
+        </items>
+      </SplitMenuButton>
+      
+      <SplitMenuButton layoutX="18.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Elite">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Command Squad                  90Pkt." />
+          <MenuItem mnemonicParsing="false" text="Honour Guard                       85Pkt." />
+          <MenuItem mnemonicParsing="false" text="Centurion Assault Squad     165Pkt." />
+          <MenuItem mnemonicParsing="false" text="Vanguard Veteran Squad      95Pkt." />
+          <MenuItem mnemonicParsing="false" text="Sternguard Veteran Squad  110Pkt." />
+          <MenuItem mnemonicParsing="false" text="Dreadnoughts                     100Pkt." />
+          <MenuItem mnemonicParsing="false" text="Venerable Dreadnoughts    125Pkt." />
+          <MenuItem mnemonicParsing="false" text="Ironclad Dreadnoughts       135Pkt." />
+          <MenuItem mnemonicParsing="false" text="Legion of the Damned        125Pkt." />
+          <MenuItem mnemonicParsing="false" text="Terminator Squad               175Pkt." />
+          <MenuItem mnemonicParsing="false" text="Terminator Assault Squad   175Pkt." />
+        </items>
+      </SplitMenuButton>
+      
+      <SplitMenuButton layoutX="19.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Sturm">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Assault Squad              70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Scout Bike Squad         54Pkt." />
+          <MenuItem mnemonicParsing="false" text="Bike Squad                   63Pkt." />
+          <MenuItem mnemonicParsing="false" text="Attack Bike Squad        40Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Speeder Storm    40Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Speeders             45Pkt." />
+          <MenuItem mnemonicParsing="false" text="Rhino                           35Pkt" />
+          <MenuItem mnemonicParsing="false" text="Razorback                    55Pkt." />
+          <MenuItem mnemonicParsing="false" text="Drop Pod                     35Pkt." />
+          <MenuItem mnemonicParsing="false" text="Stormtalon Gunship   110Pkt." />
+        </items>
+      </SplitMenuButton>
+      
+      <SplitMenuButton layoutX="17.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Unterstützung">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Devastor Squad                        70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Centurion Devastor Squad      165Pkt." />
+          <MenuItem mnemonicParsing="false" text="Thunderfire Cannons               100Pkt." />
+          <MenuItem mnemonicParsing="false" text="Predators                                  75Pkt." />
+          <MenuItem mnemonicParsing="false" text="Whirlwinds                                65Pkt." />
+          <MenuItem mnemonicParsing="false" text="Vindicators                              120Pkt." />
+          <MenuItem mnemonicParsing="false" text="Hunters                                     70Pkt." />
+          <MenuItem mnemonicParsing="false" text="Stalkers                                     75Pkt." />
+          <MenuItem mnemonicParsing="false" text="Stormraven Gunship               200Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider                             250Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider Crusader             250Pkt." />
+          <MenuItem mnemonicParsing="false" text="Land Raider Redeemer           240Pkt." />
+        </items>
+      </SplitMenuButton>
+      
+      <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
+         <children>
+            <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" text="Zurück" />
+            <Button layoutX="442.0" layoutY="150.0" mnemonicParsing="false" text="Speichern" />
+         </children>
+      </Pane>
+      
+      <Label styleClass="punkte" layoutX="20.0" layoutY="20.0" text="Punktelimit: " />
+      <Label fx:id="labl1" layoutX="105.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="punkte" />
+      <TextField fx:id="einheitsname" layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
+      <Label fx:id="anzahl" layoutX="188.0" layoutY="20.0" text="" />
+      
+      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="Undo" fx:id="undo" onAction="#undoAction" >        
+          <tooltip>
+              <Tooltip text="Letzte Einheit entfernen" />
+          </tooltip>    
+      </Button>
+   </children>
+</AnchorPane>

@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.*?>
 
+<<<<<<< HEAD
 <GridPane id="Opt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="250" minWidth="400" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
    
     <stylesheets>
@@ -35,6 +36,38 @@
       <SplitMenuButton maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Hintergrund Auswahl" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
         <items>
           <MenuItem mnemonicParsing="false" text="Space Marine" />
+=======
+<GridPane id="Opt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="250" minWidth="400" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+ fx:controller="Optionen.OptionenFXMLController">
+  
+    <stylesheets>
+        <URL value="@optionenfxml.css"/>
+    </stylesheets>
+    
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+        <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="NEVER" />
+    </rowConstraints>
+  
+   <children>
+      <Slider GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+      
+      <SplitMenuButton fx:id="bgButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Hintergrund Auswahl" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Space Marine"  />
+>>>>>>> origin/master
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
       </SplitMenuButton>
@@ -48,7 +81,11 @@
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Übernehmen" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
       </Button>
       
+<<<<<<< HEAD
       <Button maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Verwerfen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+=======
+      <Button fx:id="back" onAction="#actionBac"  maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Zurück" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+>>>>>>> origin/master
       </Button>
       
       <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="25.0" maxWidth="140.0" minHeight="25.0" minWidth="140.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="140.0" text="Hintergrund Auswahl" textAlignment="JUSTIFY" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
