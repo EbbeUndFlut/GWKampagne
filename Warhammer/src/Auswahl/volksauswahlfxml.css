@@ -1,0 +1,51 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    -fx-background-image: url(../Media/img.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center; 
+    
+}
+Button{
+    -fx-background-color: transparent;
+    -fx-text-fill:white;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 16px;  
+}
+#Marines{
+    -fx-background-image: url(../Media/spaceIcon.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+}
+    
+#Tau{
+    -fx-background-image: url(../Media/tau.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+}
+
+#Necron{
+    -fx-background-image: url(../Media/necron.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+} 
+
+Button:hover{
+     
+    -fx-background-color: rgba(174,174,0,0.1);
+    -fx-text-fill: yellow;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(174,174,0);
+}
+
+Button:pressed{
+    
+    -fx-background-color: rgba(100,0,0,0.5);
+  
+}

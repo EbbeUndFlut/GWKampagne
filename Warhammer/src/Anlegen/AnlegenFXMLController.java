@@ -60,7 +60,7 @@ public class AnlegenFXMLController implements Initializable {
         Parent root;
         stage=(Stage)back.getScene().getWindow();
 
-        root=FXMLLoader.load(getClass().getResource("VolksAuswahlFXML.fxml"));
+        root=FXMLLoader.load(getClass().getResource("/Auswahl/VolksAuswahlFXML.fxml"));
 
         
         Scene scene =new Scene(root);

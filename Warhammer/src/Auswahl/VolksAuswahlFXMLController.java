@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Anlegen;
+package Auswahl;
 
 import java.io.IOException;
 import java.net.URL;
@@ -46,7 +46,7 @@ public class VolksAuswahlFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)next.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("AnlegenFXML.fxml"));
+        root=FXMLLoader.load(getClass().getResource("/Anlegen/AnlegenFXML.fxml"));
         
         Scene scene =new Scene(root);
         stage.setScene(scene);
