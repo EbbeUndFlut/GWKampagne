@@ -44,8 +44,7 @@ public class MainFXMLController implements Initializable {
         root=FXMLLoader.load(getClass().getResource("/KampStart/Start.fxml"));
         Scene scene =new Scene(root);
         stage.setScene(scene);
-        stage.show();
-                
+        stage.show();       
     }
     
     @FXML
@@ -53,12 +52,10 @@ public class MainFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)armee.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("/Anlegen/VolksAuswahlFXML.fxml"));
-        
+        root=FXMLLoader.load(getClass().getResource("/Auswahl/VolksAuswahlFXML.fxml")); 
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();
-     
     }
     
       @FXML
