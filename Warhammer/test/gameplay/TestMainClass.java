@@ -26,27 +26,29 @@ public class TestMainClass extends Application {
     
     public void start(Stage theStage) 
 {
-    theStage.setTitle( "Timeline Example" );
+    theStage.setTitle( "Krasse Schiffe und geile Planeten" );
  
     Group root = new Group();
     Scene theScene = new Scene( root );
     theStage.setScene( theScene );
  
-    Canvas canvas = new Canvas( 1024, 1024 );
-    Canvas layer2 = new Canvas(1024,1024);
+    Canvas canvas = new Canvas( 1024,800 );
+    //Canvas layer2 = new Canvas(1024,1024);
             
     root.getChildren().add( canvas );
-    root.getChildren().add(layer2);
+    //root.getChildren().add(layer2);
  
     GraphicsContext gc = canvas.getGraphicsContext2D();
-    GraphicsContext l2 = layer2.getGraphicsContext2D();
+    //GraphicsContext l2 = layer2.getGraphicsContext2D();
  
     Image earth = new Image( "/img/world.png" );
     Image sun   = new Image( "/img/Sun.png" );
     Image sun2   = new Image( "/img/Sun2.png" );
     Image space = new Image( "/img/space-04.jpg" );
     Image ship = new Image ("/img/ChaosShip.png");
-    Image ship2 = new Image ("/img/imperialShip.png");
+    Image ship2 = new Image ("/img/imperialShip_1.png");
+    
+    //Planet erde = new Planet(earth, 250, 220);
     
     
  
@@ -73,6 +75,8 @@ public class TestMainClass extends Application {
  
             // background image clears canvas
             gc.drawImage( space, 0, 0 );
+            //erde.update(t);
+            //erde.render(gc);
             gc.drawImage( earth, x, y );
             gc.drawImage( sun, 196, 150 );
             //l2.drawImage( sun2, 196, 150 );
