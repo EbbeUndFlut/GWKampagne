@@ -139,7 +139,7 @@ SplitMenuButton:pressed:hover{
     -fx-border-color: rgb(174,174,0);    
     -fx-background-color:black; 
 }
-.context-menu:focused .label {
+.context-menu:focused.label {
     -fx-text-fill: blue;
 }
 

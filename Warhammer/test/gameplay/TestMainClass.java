@@ -1,3 +1,5 @@
+package gameplay;
+
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -44,6 +46,7 @@ public class TestMainClass extends Application {
     Image sun2   = new Image( "/img/Sun2.png" );
     Image space = new Image( "/img/space-04.jpg" );
     Image ship = new Image ("/img/ChaosShip.png");
+    Image ship2 = new Image ("/img/imperialShip.png");
     
     
  
@@ -60,6 +63,8 @@ public class TestMainClass extends Application {
             double y = 350+ 200 * Math.sin(t/15);
             double xa = 180 + 10 * Math.cos(t/2);
             double ya = 232 + 10 * Math.sin(t/2);
+            double xb = 50 + 10 * Math.sin(t/2);
+            double yb = 50 ;
             
             
             
@@ -72,6 +77,7 @@ public class TestMainClass extends Application {
             gc.drawImage( sun, 196, 150 );
             //l2.drawImage( sun2, 196, 150 );
             gc.drawImage( ship, xa, ya);
+            gc.drawImage( ship2, xb, yb);
             
         }
     }.start();
