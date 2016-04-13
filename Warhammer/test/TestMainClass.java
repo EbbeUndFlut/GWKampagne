@@ -24,16 +24,26 @@ public class TestMainClass extends Application {
     
     public void start(Stage theStage) 
 {
-    theStage.setTitle( "Timeline Example" );
+    theStage.setTitle( "Battle Screen" );
  
     Group root = new Group();
     Scene theScene = new Scene( root );
     theStage.setScene( theScene );
  
     Canvas canvas = new Canvas( 1024, 1024 );
+
+    //Canvas layer2 = new Canvas(1024,1024);
+            
+
     root.getChildren().add( canvas );
+
+    //root.getChildren().add(layer2);
+
  
     GraphicsContext gc = canvas.getGraphicsContext2D();
+
+    //GraphicsContext l2 = layer2.getGraphicsContext2D();
+
  
     Image earth = new Image( "/img/world.png" );
     Image sun   = new Image( "/img/Sun.png" );
@@ -48,11 +58,21 @@ public class TestMainClass extends Application {
         public void handle(long currentNanoTime)
         {
             double t = (currentNanoTime - startNanoTime) / 1000000000.0; 
+
+           
+            double x = 350 + 200 * Math.cos(t/15);
+            double y = 350+ 200 * Math.sin(t/15);
+            double xa = 180 + 10 * Math.cos(t/2);
+            double ya = 232 + 10 * Math.sin(t/2);
+            
+            
+            
+           
+            //l2.rotate(5.0* Math.sin(t/15));
+
  
-            double x = 232 + 128 * Math.cos(t/2);
-            double y = 232 + 128 * Math.sin(t/2);
-            double xa = 232 + 128 * Math.cos(t/5);
-            double ya = 232 + 128 * Math.sin(t/5);
+           
+
  
             // background image clears canvas
             gc.drawImage( space, 0, 0 );
