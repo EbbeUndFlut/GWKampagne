@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package versuche;
+
+import java.util.Date;
+/**
+ *
+ * @author s13
+ */
+public class zeitrechner {
+    public static void main(String[] args){
+        
+        long time = System.currentTimeMillis();
+        
+        System.out.println(time);
+        time = time/1000;
+        System.out.println(time);
+        time = time/60;
+        System.out.println(time);
+        
+        time = time/60;
+        
+        System.out.println(time +"h");
+        time /=24;
+        
+        System.out.println(time);
+        
+        // Mit einem Date Object kann man die Systemzeit bekommen
+        Date now = new Date();
+        
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
+String ausgabe = sdf.format(now);
+
+    System.out.println(now);
+    }
+}

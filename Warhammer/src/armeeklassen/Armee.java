@@ -6,12 +6,13 @@
 package armeeklassen;
 
 import java.util.ArrayList;
+import java.io.*;
 
 /**
  *
  * @author Christian Peters <peters30kmh@gmail.com>
  */
-public class Armee {
+public class Armee implements Serializable{
     
     private String name;
     private int punkte;
@@ -26,6 +27,9 @@ public class Armee {
         Einheiten = new ArrayList<Einheiten>();
     }
     
+    public String getName(){
+        return name;
+    }
     
     public int getPunkte(){
         return punkte;

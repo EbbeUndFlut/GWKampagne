@@ -15,7 +15,7 @@
     </stylesheets>
     
    <children>
-      <SplitMenuButton  layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
+      <SplitMenuButton layoutX="20.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="HQ">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#addCaptain" text="Captain           90Pkt." />
           <MenuItem mnemonicParsing="false" onAction="#addLibrarian" text="Librarian         65Pkt." />
@@ -82,20 +82,21 @@
       
       <Pane layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="578.0">
          <children>
-            <Button fx:id="back" onAction="#backAction" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" text="Zurück" />
-            <Button layoutX="442.0" layoutY="150.0" mnemonicParsing="false" text="Speichern" />
+            <Button fx:id="back" layoutX="31.0" layoutY="150.0" mnemonicParsing="false" onAction="#backAction" text="Zurück" />
+            <Button fx:id="save" layoutX="442.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveAction" text="Speichern" />
          </children>
       </Pane>
       
-      <Label styleClass="punkte" layoutX="20.0" layoutY="20.0" text="Punktelimit: " />
+      <Label layoutX="20.0" layoutY="20.0" styleClass="punkte" text="Punktelimit: " />
       <Label fx:id="labl1" layoutX="105.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="punkte" />
       <TextField fx:id="einheitsname" layoutX="188.0" layoutY="63.0" promptText="Einheitsname" />
       <Label fx:id="anzahl" layoutX="188.0" layoutY="20.0" text="" />
       
-      <Button layoutX="188.0" layoutY="110.0" mnemonicParsing="false" text="Undo" fx:id="undo" onAction="#undoAction" >        
+      <Button fx:id="undo" layoutX="188.0" layoutY="110.0" mnemonicParsing="false" onAction="#undoAction" text="Undo">        
           <tooltip>
               <Tooltip text="Letzte Einheit entfernen" />
           </tooltip>    
       </Button>
+      <TextField fx:id="dateiName" layoutX="443.0" layoutY="415.0" promptText="Dateiname" />
    </children>
 </AnchorPane>

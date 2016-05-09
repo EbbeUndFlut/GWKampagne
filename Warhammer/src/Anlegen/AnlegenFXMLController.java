@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import armeeklassen.*;
+import java.io.*;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -30,18 +31,23 @@ public class AnlegenFXMLController implements Initializable {
    Armee army = new Armee("Blood Angels", 5000);
    Einheiten einheit;
    
+   //Label
    @FXML
    Label labl1;
    @FXML
    Label anzahl;
    
+   //Button
    @FXML
    Button undo;
    @FXML
    Button back;
    
+   //TextField
    @FXML
    TextField einheitsname;
+   @FXML
+   TextField dateiName;
    
    @FXML
    public void undoAction(ActionEvent event){
@@ -66,6 +72,26 @@ public class AnlegenFXMLController implements Initializable {
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();
+   }
+   
+   @FXML
+   public void saveAction(ActionEvent event) throws FileNotFoundException{
+       if (dateiName.getLength()!= 0){
+       try{
+           FileOutputStream fs = new FileOutputStream(dateiName.getText()+".ser");
+           ObjectOutputStream os = new ObjectOutputStream(fs);
+           os.writeObject(army);
+           os.close();
+       }catch(Exception ex){
+           ex.printStackTrace();
+       }
+       }
+       else{
+               dateiName.setPromptText("DATEINAME EINGEBEN");
+               }
+       
+       
+       
    }
    
    @FXML

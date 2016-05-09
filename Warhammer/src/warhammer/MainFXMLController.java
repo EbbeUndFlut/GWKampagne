@@ -66,7 +66,8 @@ public class MainFXMLController implements Initializable {
         Stage stage;
         Parent root;
         stage=(Stage)optionen.getScene().getWindow();
-        root=FXMLLoader.load(getClass().getResource("/Optionen/OptionenFXML.fxml"));
+        //root=FXMLLoader.load(getClass().getResource("/Optionen/OptionenFXML.fxml"));
+        root=FXMLLoader.load(getClass().getResource("/Anlegen/AnzeigenFXML.fxml"));
         Scene scene =new Scene(root);
         stage.setScene(scene);
         stage.show();

@@ -5,11 +5,13 @@
  */
 package armeeklassen;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Christian Peters <peters30kmh@gmail.com>
  */
-public class Einheiten {
+public class Einheiten implements Serializable {
     /**
      * bezeichnung soll ein vom User individueller name sein
      * schlachtfeldRolle nimmt auf ob es ein HQ Standart Elite Sturm oder Unterstüzer ist
