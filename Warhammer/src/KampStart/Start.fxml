@@ -8,7 +8,7 @@
 
 <GridPane id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Optionen.OptionenFXMLController">
     <stylesheets>
-        <URL value="@start.css"/>
+        <URL value="@../warhammer/MainFXML.css"/>
     </stylesheets>
     
     

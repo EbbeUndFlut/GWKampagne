@@ -11,7 +11,7 @@
 
    
     <stylesheets>
-        <URL value="@anlegenfxml.css" />
+        <URL value="@../warhammer/MainFXML.css" />
     </stylesheets>
     
    <children>

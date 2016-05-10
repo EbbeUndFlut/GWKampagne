@@ -10,7 +10,7 @@
  fx:controller="Optionen.OptionenFXMLController">
   
     <stylesheets>
-        <URL value="@optionenfxml.css"/>
+        <URL value="@../warhammer/MainFXML.css"/>
     </stylesheets>
     
     <columnConstraints>

@@ -4,12 +4,27 @@
     Author     : s01
 */
 
-#Main{
+.root{
+    -fx-background-image: url(../Media/img.jpg);
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center; 
+}    
+
+.punkte{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,1,2 );
+}
+
+GridPane{
     -fx-background-image: url(../Media/img.jpg);
     -fx-background-repeat: stretch;
     -fx-background-size: 1920 1080;
     -fx-background-position: center center; 
 }
+
 #Optionen{
     -fx-background-image: url(../Media/img.jpg);
     -fx-background-repeat: stretch;
@@ -34,5 +49,80 @@ Button:hover{
 }
 
 Button:pressed:hover{
+    
     -fx-background-color: rgba(100,0,0,0.5)
+}
+#Marines{
+    -fx-background-image: url(../Media/spaceIcon.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+}
+    
+#Tau{
+    -fx-background-image: url(../Media/tau.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+}
+
+#Necron{
+    -fx-background-image: url(../Media/necron.png);
+    -fx-background-color: transparent; 
+    -fx-background-repeat: no-repeat; 
+    -fx-background-position: center;
+} 
+
+Label{
+    -fx-font-family:"Agency FB";
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-font-size:13px;
+}
+
+SplitMenuButton{
+    -fx-font-family:"Agency FB";
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-color:black;
+}
+SplitMenuButton:hover{
+    -fx-background-color: rgba(174,174,0,0.1);
+    -fx-text-fill: yellow;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(174,174,0);    
+    -fx-color:black; 
+}
+
+SplitMenuButton:pressed{
+    -fx-background-color: rgba(174,174,0,0.1);
+    -fx-background-color:black;
+    -fx-text-fill: yellow;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(174,174,0);
+}
+
+SplitMenuButton:pressed:hover{
+    -fx-background-color: rgba(100,0,0,0.5)
+}
+
+.context-menu {
+
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.context-menu:hover .label {
+    -fx-text-fill: white;
+}
+
+.context-menu:focused {
+    -fx-background-color: rgba(174,174,0,0.1);
+    -fx-text-fill: yellow;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(174,174,0);    
+    -fx-background-color:black; 
+}
+.context-menu:focused .label {
+    -fx-text-fill: blue;
 }
