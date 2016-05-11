@@ -78,7 +78,7 @@ public class AnlegenFXMLController implements Initializable {
    public void saveAction(ActionEvent event) throws FileNotFoundException{
        if (dateiName.getLength()!= 0){
        try{
-           FileOutputStream fs = new FileOutputStream(dateiName.getText()+".ser");
+           FileOutputStream fs = new FileOutputStream("C:\\Users\\Christian\\Documents\\NetBeansProjects\\GWKampagne\\Warhammer\\src\\saveGames\\"+dateiName.getText()+".ser");
            ObjectOutputStream os = new ObjectOutputStream(fs);
            os.writeObject(army);
            os.close();
